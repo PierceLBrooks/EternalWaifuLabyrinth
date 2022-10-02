@@ -21,3 +21,4 @@ func _input(event):
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			if event.position[0] > rect_global_position[0] and event.position[1] > rect_global_position[1] and event.position[0] < rect_global_position[0]+rect_size[0] and event.position[1] < rect_global_position[1]+rect_size[1]:
 				print("play")
+				get_tree().change_scene("res://game.tscn")
