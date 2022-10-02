@@ -20,7 +20,7 @@ func _ready():
 		clone.translate(Vector2(rand_range(0, width), rand_range(0, height)))
 		sprites.append(clone)
 		background.add_child(clone)
-	#get_node("AudioStreamPlayer").play()
+	get_node("AudioStreamPlayer").play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
